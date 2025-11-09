@@ -7,7 +7,7 @@ from matplotlib.widgets import RadioButtons
 a0 = 1.0  # raggio di Bohr
 
 
-# === Funzioni d'onda corrette ===
+# FUNZIONI SCRITTE DA ME
 def hydrogen_1s(x, y, z, a0=1.0):
     r = np.sqrt(x**2 + y**2 + z**2)
     psi = (1 / np.sqrt(np.pi * a0**3)) * np.exp(-r / a0)
@@ -39,7 +39,7 @@ def hydrogen_2p_z(x, y, z, a0=1.0):
     return psi
 
 
-# === Griglia 3D ===
+# === Griglia 3D === // DA QUI IN POI HA FATTO CHATGPT PERCHE' NON AVEVO VOGLIA
 n = 40
 lim = 9.5
 x = np.linspace(-lim, lim, n)
